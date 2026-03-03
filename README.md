@@ -3,12 +3,12 @@
 MATLAB reference implementation of the Sliding-Window Channel Capacity (and Prediction Correlation) framework for estimating the time-varying strength (prediction-correlation) and duration (how long directed influence persists across windows) of directed interactions between ROI time series (e.g., fMRI BOLD).
 
 1. data input: data.mat
-2. main script to run swpc: main_script2run_swpc.m
-3. functions that execute swpc: ./swccv0226/sliding_pcorr_cc_window.m & ./swccv0226/pcorr_cc_x2y.m
+2. main script to run swcc: main_script2run_swcc.m
+3. functions that execute swcc: ./swccv0226/sliding_pcorr_cc_window.m & ./swccv0226/pcorr_cc_x2y.m
 
 ## Contents
 
-- `main_script2run_swpc.m` — demo driver script (load data → run channel capacity SWpC → save outputs)
+- `main_script2run_swcc.m` — demo driver script (load data → run SWCC and Pcorr → save outputs)
 - `data.mat` — demo input data
 - `swccv0226/`
   - `sliding_pcorr_cc_window.m` — sliding-window wrapper
@@ -29,7 +29,7 @@ MATLAB reference implementation of the Sliding-Window Channel Capacity (and Pred
 In MATLAB (repo root):
 
 ```matlab
-run('main_script2run_swpc.m')
+run('main_script2run_swcc.m')
 ```
 ---
 
@@ -130,7 +130,7 @@ Returns (typically) `1 × nWindows` vectors (unless otherwise noted):
 - `H` — estimated impulse responses per window (stacked across windows)
 - `nmaps` — number of windows
 
-### What `main_script2run_swpc.m` saves (per subject)
+### What `main_script2run_swcc.m` saves (per subject)
 
 The demo script saves one file per subject:
 
