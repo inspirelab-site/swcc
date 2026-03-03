@@ -1,4 +1,4 @@
-# sliding window channel capacity (swcc - matlab)
+# Sliding Window Channel Capacity (swcc - matlab)
 
 MATLAB reference implementation of the Sliding-Window Channel Capacity (and Prediction Correlation) framework for estimating the time-varying strength (prediction-correlation) and duration (how long directed influence persists across windows) of directed interactions between ROI time series (e.g., fMRI BOLD).
 
