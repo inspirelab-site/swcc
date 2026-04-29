@@ -236,7 +236,7 @@ for in=1:Nnodes
                 break;
             end
         end
-        CC_AIC(in, out) = cap; % bit rate per Nyquist frequency 
+        CC_AIC(in, out) = cap; % bit per sample 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %BIC
         divV1V2 = V2 - V2_preBIC_matlab; % residual                                            
@@ -251,7 +251,7 @@ for in=1:Nnodes
                 break;
             end
         end
-        CC_BIC(in, out) = cap; % bit rate per Nyquist frequency 
+        CC_BIC(in, out) = cap; % bit per sample 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     end
