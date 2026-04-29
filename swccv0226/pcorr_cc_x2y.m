@@ -87,7 +87,7 @@ function [cc_bic, corr_bic, Nh_bic, cc_aic, corr_aic, Nh_aic, corr_std, corr0, H
                 break;
             end
         end
-        cc_aic = cap; % bit rate per Nyquist frequency 
+        cc_aic = cap; % bit per sample 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %BIC
         divV1V2 = V2 - V2_preBIC_matlab; % residual                                            
@@ -102,7 +102,7 @@ function [cc_bic, corr_bic, Nh_bic, cc_aic, corr_aic, Nh_aic, corr_std, corr0, H
                 break;
             end
         end
-        cc_bic = cap; % bit rate per Nyquist frequency 
+        cc_bic = cap; % bit per sample 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
